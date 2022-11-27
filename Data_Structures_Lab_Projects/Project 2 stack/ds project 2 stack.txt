@@ -1,0 +1,55 @@
+stuct vm
+
+char stack[10][10];
+char name[60];
+int price;
+char taste[25]
+char category[25];
+int tos; //top of stack
+
+example:
+{.stack={'-','-','-','-','-','-','-','-','-','-'},.name="balaji masala wafer",.price=10,.taste="spicy",.category="namkeen",.tos=-1},
+40 food items.
+
+//KRUPA
+push operation (input-value,stack; output-tos)
+pop operation (input-stack, output-popped element,tos)
+
+whether manager or customer?
+-customer
+-manager
+-leave application
+
+if customer:
+
+initial customer options:
+1.whole menu
+2.categories (lays, kurkure, chocolate, drinks, namkeen, nachos, biscuits, khakra) //VRUNDA (input-struct vm, function name-catgy)
+3.tastes (sweet, spicy, chatpata(savory), mint-flaovour, salty, bitter,tangy) //MISARI (input-struct vm, function name-taste)
+4.price range (1-10,11-20,21-30,31-40,41-50,51-60,61-70) //TANYA (input-struct vm, function name-price)
+(food name - quantity available - price)
+(while loop within options 2,3,4)
+
+ready to order:
+enter food item and quantity you want. 
+(if quantity not available - tell them to enter again)
+
+pop from respective stack
+
+once order placed:
+tell them the amount of money they have to pay
+'please pay and collect your products'
+
+do you want to purchase more?
+
+once user is done with taking the products:
+'Good food brings good mood. :)'
+
+if manager:
+
+ask them to enter pin
+
+enter name of food you want to add and qantity of the packets.
+if quantity is less than or equal to space available - push onto stack.
+
+then ask, if they want to put in more packets.
